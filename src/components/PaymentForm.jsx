@@ -19,7 +19,7 @@ const PaymentForm = ({ amount, onSuccess, onCancel }) => {
     if (error) {
       console.log('[error]', error);
     } else {
-      const response = await fetch('http://localhost:3000/create-payment-intent', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/create-payment-intent`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
