@@ -14,7 +14,7 @@ function App() {
   const handleCheckout = async () => {
     try {
       const stripe = await stripePromise
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/create-checkout-session`, {
+      const response = await fetch('/api/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -22,9 +22,14 @@ function App() {
         body: JSON.stringify({ product }),
       })
 
-      const session = await response.json()
+      if (!response.ok) {
+        throw new Error('Network response was not ok')
+      }
+
+      const data = await response.json()
+      
       const result = await stripe.redirectToCheckout({
-        sessionId: session.id,
+        sessionId: data.id,
       })
 
       if (result.error) {
