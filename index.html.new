@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Métadonnées de base -->
+    <title>Audio Shop - Votre boutique audio en ligne</title>
+    <meta name="description" content="Découvrez notre collection d'audio de haute qualité. Achetez en toute sécurité avec Stripe." />
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Audio Shop - Votre boutique audio en ligne" />
+    <meta property="twitter:description" content="Découvrez notre collection d'audio de haute qualité. Achetez en toute sécurité avec Stripe." />
+    <meta property="twitter:image" content="https://stripe-shop-alpha.vercel.app/vite.svg" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Audio Shop - Votre boutique audio en ligne" />
+    <meta property="og:description" content="Découvrez notre collection d'audio de haute qualité. Achetez en toute sécurité avec Stripe." />
+    <meta property="og:image" content="https://stripe-shop-alpha.vercel.app/vite.svg" />
+    <meta property="og:url" content="https://stripe-shop-alpha.vercel.app" />
+    <meta property="og:site_name" content="Audio Shop" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
